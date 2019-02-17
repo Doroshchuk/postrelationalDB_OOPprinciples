@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPprinciples_Phones.Model
+namespace OOPprinciples_Phones.Model.Wireless
 {
     public class CellPhone : WirelessPhone
     {
