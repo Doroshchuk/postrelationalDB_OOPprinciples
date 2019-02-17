@@ -43,12 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Contact.cs" />
     <Compile Include="Model\Landline\LandlinePhone.cs" />
     <Compile Include="Model\Landline\ThomasEdisonPhone.cs" />
+    <Compile Include="Model\SimCard.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Model\Wireless\CellPhone.cs" />
     <Compile Include="Model\Phone.cs" />
     <Compile Include="Model\Wireless\Smartphone.cs" />
+    <Compile Include="Model\Wireless\VideoPhone.cs" />
     <Compile Include="Model\Wireless\WirelessPhone.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

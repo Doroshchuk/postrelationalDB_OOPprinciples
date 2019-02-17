@@ -18,7 +18,7 @@ namespace OOPprinciples_Phones.Model.Landline
             Console.WriteLine("Вращайте ручку!");
         }
 
-        public new void Call(int outputNumber)
+        public new void Call(string outputNumber)
         {
             KeepConnection();
             Call(outputNumber);

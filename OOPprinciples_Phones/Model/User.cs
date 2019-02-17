@@ -15,7 +15,7 @@ namespace OOPprinciples_Phones.Model
             _name = name;
         }
 
-        public void callAnotherUser(int number, Phone phone)
+        public void callAnotherUser(string number, Phone phone)
         {
             phone.Call(number);
         }

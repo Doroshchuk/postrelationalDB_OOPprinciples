@@ -10,15 +10,15 @@ namespace OOPprinciples_Phones.Model
     {
         private int _year;
 
-        public int Number { get; set; }
+        public string Number { get; set; }
 
         public Phone(int year)
         {
             _year = year;
         }
 
-        public abstract void Call(int outputNumber);
+        public abstract void Call(string outputNumber);
 
-        public abstract void Ring(int inputNumber);
+        public abstract void Ring(string inputNumber);
     }
 }

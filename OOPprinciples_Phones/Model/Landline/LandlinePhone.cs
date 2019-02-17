@@ -13,10 +13,10 @@ namespace OOPprinciples_Phones.Model.Landline
 
         }
 
-        public override void Call(int outputNumber)
+        public override void Call(string outputNumber)
         {
             string currentOutputNumber = "";
-            foreach (char digit in outputNumber.ToString())
+            foreach (char digit in outputNumber)
             {
                 currentOutputNumber += digit;
                 Console.WriteLine("Введено номер: '" + currentOutputNumber + "'.");
@@ -24,7 +24,7 @@ namespace OOPprinciples_Phones.Model.Landline
             Console.WriteLine("Вызов осуществляется!");
         }
 
-        public override void Ring(int inputNumber)
+        public override void Ring(string inputNumber)
         {
             Console.WriteLine("Телефон звонит!");
         }

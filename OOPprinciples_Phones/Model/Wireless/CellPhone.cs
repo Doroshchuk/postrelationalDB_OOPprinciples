@@ -8,19 +8,20 @@ namespace OOPprinciples_Phones.Model.Wireless
 {
     public class CellPhone : WirelessPhone
     {
-        public CellPhone(int year, int hour) : base(year, hour)
+        public CellPhone(int year, int batteryTime) : base(year, batteryTime)
         {
 
         }
 
-        public override void Call(int outputNumber)
+        public override void Call(string outputNumber)
         {
-            Console.WriteLine("Осуществляется входящий вызов с номера '" + outputNumber + "' на текущий номер '" + Number + "'.");
+            Console.WriteLine("Осуществляется исходящий вызов с текущего номера '" + Number + "' на номер другого абонента '" + outputNumber + "'.");
         }
 
-        public override void Ring(int inputNumber)
+        public override void Ring(string inputNumber)
         {
-            Console.WriteLine("Осуществляется исходящий вызов с текущего номера '" + Number + "' на номер другого абонента '" + inputNumber + "'.");
+            Console.WriteLine("Осуществляется входящий вызов с номера '" + inputNumber + "' на текущий номер '" + Number + "'.");
+            
         }
     }
 }

@@ -8,11 +8,12 @@ namespace OOPprinciples_Phones.Model.Wireless
 {
     public abstract class WirelessPhone : Phone
     {
-        private int _hour;
+        private int _batteryTime;
+        public SimCard SimCard { get; set; }
 
-        public WirelessPhone(int year, int hour) : base(year)
+        public WirelessPhone(int year, int batteryTime) : base(year)
         {
-            _hour = hour;
+            _batteryTime = batteryTime;
         }
     }
 }
