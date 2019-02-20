@@ -18,10 +18,10 @@ namespace OOPprinciples_Phones.Model.Landline
             Console.WriteLine("Вращайте ручку!");
         }
 
-        public new void Call(string outputNumber)
+        public override void Call(string outputNumber)
         {
             KeepConnection();
-            Call(outputNumber);
+            base.Call(outputNumber);
         }
     }
 }
