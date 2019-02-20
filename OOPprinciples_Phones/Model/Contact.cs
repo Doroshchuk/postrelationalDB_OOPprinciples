@@ -26,7 +26,7 @@ namespace OOPprinciples_Phones.Model
         public bool Equals(Contact contact)
         {
             return contact != null &&
-                        contact.Name == this.Name;
+                        contact.Name == Name;
         }
     }
 }

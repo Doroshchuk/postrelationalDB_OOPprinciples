@@ -8,6 +8,8 @@ namespace OOPprinciples_Phones.Model.Landline
 {
     public class LandlinePhone : Phone
     {
+        public string Number { get; set; }
+
         public LandlinePhone(int year) : base(year)
         {
 

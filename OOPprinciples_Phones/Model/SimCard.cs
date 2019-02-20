@@ -8,26 +8,27 @@ namespace OOPprinciples_Phones.Model
 {
     public class SimCard
     {
-        private List<Contact> _contacts;
+        public string Number { get; private set; }
+        public List<Contact> Contacts { get; private set; }
 
-        public SimCard()
+        public SimCard(string number)
         {
-            _contacts = new List<Contact>();
+            Number = number;
+            Contacts = new List<Contact>();
         }
 
         public void AddContact(Contact contact)
         {
-            if (!_contacts.Contains(contact))
+            if (!Contacts.Contains(contact))
             {
-                _contacts.Add(contact);
+                Contacts.Add(contact);
                 Console.WriteLine("Контакт успешно добавлен!");
             }
             else Console.WriteLine("Контакт с таким именем уже существует!");
         }
 
-        public Contact GetContact(string name)
-        {
-            return _contacts.FirstOrDefault(x => x.Name == name);
-        }
+        public Contact GetContactByName(string name) => Contacts.FirstOrDefault(x => x.Name == name);
+
+        public Contact GetContactByNumber(string number) => Contacts.FirstOrDefault(x => x.Numbers.Contains(number));
     }
 }

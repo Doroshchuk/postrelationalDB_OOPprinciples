@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OOPprinciples_Phones.Model.Landline;
+using OOPprinciples_Phones.Model.Wireless;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,9 +17,29 @@ namespace OOPprinciples_Phones.Model
             _name = name;
         }
 
-        public void callAnotherUser(string number, Phone phone)
+        public void CallAnotherUser(string outputNumber, LandlinePhone phone)
         {
-            phone.Call(number);
+            phone.Call(outputNumber);
+        }
+
+        public void CallAnotherUser(string contactNameOrNumber, WirelessPhone phone)
+        {
+            Contact contact = phone.SimCard.GetContactByName(contactNameOrNumber);
+            string outputNumber = contact != null ? contact.Numbers.First() : contactNameOrNumber;
+            phone.Call(outputNumber);
+        }
+
+
+        public void AcceptIncomingCall(string inputNumber, WirelessPhone phone)
+        {
+            Contact contact = phone.SimCard.GetContactByNumber(inputNumber);
+            Console.WriteLine(contact != null ? contact.Name : "Неизвестный абонент");
+            phone.Ring(inputNumber);
+        }
+
+        public void AcceptIncomingCall(string inputNumber, LandlinePhone phone)
+        {
+            phone.Ring(inputNumber);
         }
     }
 }

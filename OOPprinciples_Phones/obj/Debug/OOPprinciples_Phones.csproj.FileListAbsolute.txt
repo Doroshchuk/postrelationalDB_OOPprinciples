@@ -1,0 +1,7 @@
+C:\Dasha\University\SecondSemester\PostrelationalDB\OOPprinciples_Phones\OOPprinciples_Phones\bin\Debug\OOPprinciples_Phones.exe.config
+C:\Dasha\University\SecondSemester\PostrelationalDB\OOPprinciples_Phones\OOPprinciples_Phones\bin\Debug\OOPprinciples_Phones.exe
+C:\Dasha\University\SecondSemester\PostrelationalDB\OOPprinciples_Phones\OOPprinciples_Phones\bin\Debug\OOPprinciples_Phones.pdb
+C:\Dasha\University\SecondSemester\PostrelationalDB\OOPprinciples_Phones\OOPprinciples_Phones\obj\Debug\OOPprinciples_Phones.csprojAssemblyReference.cache
+C:\Dasha\University\SecondSemester\PostrelationalDB\OOPprinciples_Phones\OOPprinciples_Phones\obj\Debug\OOPprinciples_Phones.csproj.CoreCompileInputs.cache
+C:\Dasha\University\SecondSemester\PostrelationalDB\OOPprinciples_Phones\OOPprinciples_Phones\obj\Debug\OOPprinciples_Phones.exe
+C:\Dasha\University\SecondSemester\PostrelationalDB\OOPprinciples_Phones\OOPprinciples_Phones\obj\Debug\OOPprinciples_Phones.pdb

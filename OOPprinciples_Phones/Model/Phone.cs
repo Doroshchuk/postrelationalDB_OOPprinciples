@@ -10,8 +10,6 @@ namespace OOPprinciples_Phones.Model
     {
         private int _year;
 
-        public string Number { get; set; }
-
         public Phone(int year)
         {
             _year = year;

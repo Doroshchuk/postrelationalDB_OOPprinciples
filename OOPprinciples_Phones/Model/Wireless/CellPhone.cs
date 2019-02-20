@@ -15,12 +15,12 @@ namespace OOPprinciples_Phones.Model.Wireless
 
         public override void Call(string outputNumber)
         {
-            Console.WriteLine("Осуществляется исходящий вызов с текущего номера '" + Number + "' на номер другого абонента '" + outputNumber + "'.");
+            Console.WriteLine("Осуществляется исходящий вызов с текущего номера '" + SimCard.Number + "' на номер другого абонента '" + outputNumber + "'.");
         }
 
         public override void Ring(string inputNumber)
         {
-            Console.WriteLine("Осуществляется входящий вызов с номера '" + inputNumber + "' на текущий номер '" + Number + "'.");
+            Console.WriteLine("Осуществляется входящий вызов с номера '" + inputNumber + "' на текущий номер '" + SimCard.Number + "'.");
             
         }
     }
