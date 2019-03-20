@@ -24,12 +24,9 @@ namespace OOPprinciples_Phones
             landlinePhone.Number = "596235";
             ThomasEdisonPhone thomasEdisonPhone = new ThomasEdisonPhone(1980);
             thomasEdisonPhone.Number = "562348";
-            CellPhone cellphone = new CellPhone(2011, 5);
-            cellphone.SimCard = simCard;
-            Smartphone smartphone = new Smartphone(2018, 48, "Android");
-            smartphone.SimCard = simCard;
-            VideoPhone videoPhone = new VideoPhone(2017, 24);
-            videoPhone.SimCard = simCard;
+            CellPhone cellphone = new CellPhone(2011, 5, simCard);
+            Smartphone smartphone = new Smartphone(2018, 48, "Android", simCard);
+            VideoPhone videoPhone = new VideoPhone(2017, 24, simCard);
 
             User user = new User("Daria");
             Console.WriteLine("LandlinePhone");

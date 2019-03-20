@@ -8,9 +8,11 @@ namespace OOPprinciples_Phones.Model.Wireless
 {
     public class CellPhone : WirelessPhone
     {
-        public CellPhone(int year, int batteryTime) : base(year, batteryTime)
-        {
+        public SimCard SimCard { get; private set; }
 
+        public CellPhone(int year, int batteryTime, SimCard simCard) : base(year, batteryTime)
+        {
+            SimCard = simCard;
         }
 
         public override void Call(string outputNumber)

@@ -8,7 +8,7 @@ namespace OOPprinciples_Phones.Model.Wireless
 {
     public class VideoPhone : CellPhone
     {
-        public VideoPhone(int year, int batteryTime) : base(year, batteryTime)
+        public VideoPhone(int year, int batteryTime, SimCard simCard) : base(year, batteryTime, simCard)
         {
 
         }

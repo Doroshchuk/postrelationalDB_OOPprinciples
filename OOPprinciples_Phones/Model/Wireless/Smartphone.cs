@@ -10,7 +10,7 @@ namespace OOPprinciples_Phones.Model.Wireless
     {
         private string _operationSystem;
 
-        public Smartphone(int year, int batteryTime, string operationSystem) : base(year, batteryTime)
+        public Smartphone(int year, int batteryTime, string operationSystem, SimCard simCard) : base(year, batteryTime, simCard)
         {
             _operationSystem = operationSystem;
         }

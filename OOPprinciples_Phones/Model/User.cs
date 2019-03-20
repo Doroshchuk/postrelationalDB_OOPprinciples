@@ -22,7 +22,7 @@ namespace OOPprinciples_Phones.Model
             phone.Call(outputNumber);
         }
 
-        public void CallAnotherUser(string contactNameOrNumber, WirelessPhone phone)
+        public void CallAnotherUser(string contactNameOrNumber, CellPhone phone)
         {
             Contact contact = phone.SimCard.GetContactByName(contactNameOrNumber);
             string outputNumber = contact != null ? contact.Numbers.First() : contactNameOrNumber;
@@ -30,7 +30,7 @@ namespace OOPprinciples_Phones.Model
         }
 
 
-        public void AcceptIncomingCall(string inputNumber, WirelessPhone phone)
+        public void AcceptIncomingCall(string inputNumber, CellPhone phone)
         {
             Contact contact = phone.SimCard.GetContactByNumber(inputNumber);
             Console.WriteLine(contact != null ? contact.Name : "Неизвестный абонент");
